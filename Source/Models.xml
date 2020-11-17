@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14070.00"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="10"/>
+    <LastIsnFolder val="0"/>
+  </Header>
+
+  <ModelsRepository>
+    <Models>
+      <Object id="1" name="MLE Droppable">
+        <PropertyList model="CTRL_GUI0_EDIT">
+          <MultiLineEdit id="71" val="Y"/>
+          <VerticalScroll id="73" val="Y"/>
+          <AllowCRInData id="74" val="Y"/>
+          <ShowScrollBars id="273" val="Y"/>
+          <AllowDrag id="283" val="Y"/>
+          <AllowDrop id="284" val="Y"/>
+          <MultilineWordwrapScroll id="455" val="3"/>
+          <V11BorderStyle id="538" val="3"/>
+          <V11Style id="539" val="4"/>
+        </PropertyList>
+      </Object>
+      <Object id="2" name="FileName">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="128"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Model comp="-1" id="1" obj="1"/>
+              <V11Style id="539" val="4"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Model comp="-1" id="1" obj="1"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <Size id="174" val="128"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="3" name="BLOB Binary">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_BLOB" id="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Model comp="-1" id="1" obj="1"/>
+              <V11Style id="539" val="4"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Model comp="-1" id="1" obj="1"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullDisplay id="168" valUnicode="&lt;NULL>"/>
+          <StoredAs id="173" val="29"/>
+          <Size id="174" val="28"/>
+          <_FieldStyle id="276" val="1"/>
+          <Content id="434" val="3"/>
+        </PropertyList>
+      </Object>
+      <Object id="4" name="BLOB Unicode">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_BLOB" id="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Model comp="-1" id="1" obj="1"/>
+              <V11Style id="539" val="4"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Model comp="-1" id="1" obj="1"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullDisplay id="168" valUnicode="&lt;NULL>"/>
+          <StoredAs id="173" val="34"/>
+          <Size id="174" val="28"/>
+          <_FieldStyle id="276" val="1"/>
+          <Content id="434" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="5" name="pb.doit">
+        <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="1"/>
+          </RaiseEvent>
+          <V11ButtonStyle id="537" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="6" name="pb.doit">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="16"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="5"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="5"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <DefaultValue id="170" val="doit"/>
+          <Size id="174" val="16"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="7" name="pb.exit">
+        <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+          <RaiseEvent id="234">
+            <EventType val="I"/>
+            <InternalEventID val="13"/>
+          </RaiseEvent>
+          <V11ButtonStyle id="537" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="8" name="pb.exit">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="16"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="7"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="7"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <DefaultValue id="170" val="exit"/>
+          <Size id="174" val="16"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="9" name="pb.cancel">
+        <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+          <RaiseEvent id="234">
+            <EventType val="I"/>
+            <InternalEventID val="33"/>
+          </RaiseEvent>
+          <V11ButtonStyle id="537" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="10" name="pb.cancel">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="16"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="9"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="9"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <DefaultValue id="170" val="cancel"/>
+          <Size id="174" val="16"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+    </Models>
+  </ModelsRepository>
+
+</Application>
